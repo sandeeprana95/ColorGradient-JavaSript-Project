@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    /* background-image: linear-gradient(to right top,#051937,#004d7a,#008793,#00bf72,#a8eb12); */
+    background-Image:linear-gradient(to right top,#62a354,#222c40);
+    background-repeat: no-repeat;
+     width:100vw;
+     height:100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-sizing: border-box;
+     background-size: cover;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%; 
+    height: 80%;
+
+}
+
+#btn-container{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+button{
+padding:1rem 1.5rem;
+border-radius: 1rem;
+border: none;
+box-shadow:6px 6px  ;
+}
+
+#btn-1{
+background-color: #a8eb12;
+font-weight: bold;
+font-size: 1.5rem;
+
+}
+#btn-2{
+    background-color: #eb7412;
+font-weight: bold;
+font-size: 1.5rem;
+}
+.copyCode{
+display: flex;
+align-items: center;
+justify-content:start;
+font-size: 1.8rem;
+width: 80%;
+margin: 0 auto;
+margin-top: 20px;
+display: block;
+line-height: 1.4;
+letter-spacing: 0.2px;
+border-left: 3px solid #fff;
+background-color: rgba(189,189,189,0.1);
+padding:15px 8px 15px 17px;
+border-radius: 5px;
+/* max-height: 70%; */
+}
+
+@media only screen and (min-width:176px) and (max-width:375px){
+
+#btn-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+}
+section{
+display: flex;
+align-items: center;
+justify-content: space-around;
+height: 100%;
+width: 100%;
+} 
+.copyCode{
+width: 90%;
+}   
+}
+@media only screen and (min-width:376px) and (max-width:413px){
+section{
+width: 90%;
+} 
+.copyCode{
+width: 85%;
+}   
+}
+@media only screen and (min-width:414px) and (max-width:575px){
+section{
+width: 80%;
+} 
+.copyCode{
+width: 85%;
+}   
+}
+
+@media only screen and (min-width:576px) and (max-width:720px){
+section{
+width: 70%;
+} 
+.copyCode{
+width: 80%;
+}   
+}
